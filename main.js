@@ -3,7 +3,7 @@ const verdict = document.getElementById('msg')
 
 // true -> X, false -> O
 let player = true, end = false
-let idx = 0, dia = 0, adia = 0, rows = [0, 0, 0], cols = [0, 0, 0]
+let dia = 0, adia = 0, rows = [0, 0, 0], cols = [0, 0, 0]
 const pos = {
   1: [0, 0],
   2: [0, 1],
@@ -47,9 +47,6 @@ cells.forEach(el => {
         verdict.innerHTML = 'O has won the game!'
       }
     })
-    ++idx
-    console.log(idx);
-    
   }
 })
 
